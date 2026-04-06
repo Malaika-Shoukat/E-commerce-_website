@@ -98,3 +98,20 @@ header {
     text-align: center;
     padding-top: 14px;
 }
+
+.banner {
+    margin: 3rem 2rem 3rem 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 1;
+    gap: 5rem;
+    wrap
+}
+
+p {
+    font-size: smaller;
+}
+
+.banner_item i {
+    font-size: x-large;
+}
