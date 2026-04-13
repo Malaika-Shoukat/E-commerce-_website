@@ -5,6 +5,7 @@
     font-family: poppins, sans-serif;
 }
 
+/* header section  */
 header {
     display: flex;
     justify-content: space-between;
@@ -42,6 +43,7 @@ header {
     text-decoration: none;
 }
 
+/* hero section   */
 .hero_bg {
     display: flex;
     justify-content: space-between;
@@ -99,6 +101,7 @@ header {
     padding-top: 14px;
 }
 
+/* banner section   */
 .banner {
     margin: 3rem 2rem 3rem 2rem;
     display: grid;
@@ -121,6 +124,7 @@ header {
     margin-bottom: 0.7rem;
 }
 
+/* advertisting section   */
 .advertising_cards {
     display: grid;
     margin-bottom: 4rem;
@@ -175,6 +179,7 @@ header {
     margin-bottom: 5rem;
 }
 
+/* best seller section   */
 .best_seller h1 {
     text-align: center;
     margin: auto;
@@ -194,6 +199,7 @@ header {
     margin-bottom: 0.5rem;
 }
 
+/* catagory section   */
 .catagory_header {
     display: flex;
     justify-content: space-between;
@@ -301,4 +307,81 @@ header {
 
 .left_section h1 {
     font-size: 3.5rem;
+}
+
+/* comments section  */
+.comment_section {
+    margin: 4rem 3rem 2rem 3rem;
+
+}
+
+.comment_cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.comment_card {
+    display: flex;
+    gap: 3rem;
+}
+
+.shoe_img img {
+    border-radius: 8px;
+}
+
+
+.customer_profile img {
+    margin-top: 2rem;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+/* footer section   */
+.footer_links {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.footer_links .navigation ul li,
+.footer_links .catagories ul li,
+.footer_links .utility_Pages ul li,
+.footer_links .our_locations ul li,
+.footer_links .ny_store ul li {
+    list-style: none;
+
+}
+
+.footer_links .navigation p,
+.footer_links .catagories p,
+.footer_links .utility_Pages p,
+.footer_links .our_locations p,
+.footer_links .ny_store p {
+    margin-top: 8rem;
+    font-weight: bolder;
+}
+
+.footer_links .navigation ul li a,
+.footer_links .catagories ul li a,
+.footer_links .utility_Pages ul li a,
+.footer_links .our_locations ul li a,
+.footer_links .ny_store ul li a {
+    text-decoration: none;
+    color: rgb(57, 55, 55);
+    line-height: 2rem;
+    font-size: 0.9rem;
+}
+
+.footer_content ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: rgb(57, 55, 55);
 }
