@@ -385,3 +385,140 @@ header {
     font-size: 0.9rem;
     color: rgb(57, 55, 55);
 }
+
+
+/* =========================
+  small-screen (max-width: 576px)
+========================= */
+@media (max-width: 576px) {
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 8px 0;
+        text-align: center;
+    }
+
+    .hero_bg {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left_hero h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .right_hero {
+        margin-top: 20px;
+    }
+
+    .banner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .advertising_cards {
+        grid-template-columns: 1fr;
+    }
+
+    .shoes_cards {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .comment_cards {
+        flex-direction: column;
+    }
+
+    .comment_card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer_links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer_content ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+
+/* =========================
+  medium-screen (577px - 992px)
+========================= */
+@media (min-width: 577px) and (max-width: 992px) {
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    .hero_bg {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left_hero h1 {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+
+    .banner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .advertising_cards {
+        grid-template-columns: 1fr;
+    }
+
+    .shoes_cards {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .comment_cards {
+        flex-direction: column;
+    }
+
+    .footer_links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+/* =========================
+   large-screen (993px - 1200px)
+========================= */
+@media (min-width: 993px) and (max-width: 1200px) {
+
+    .shoes_cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .banner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .advertising_cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .left_hero h1 {
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+}
