@@ -31,6 +31,10 @@ header {
     text-decoration: none;
 }
 
+.navbar ul li a:hover {
+    color: rgb(55, 71, 125);
+}
+
 .right_icons ul li {
     display: inline-block;
     color: black;
@@ -42,6 +46,7 @@ header {
     color: black;
     text-decoration: none;
 }
+
 
 /* hero section   */
 .hero_bg {
@@ -520,5 +525,69 @@ header {
     .left_hero h1 {
         font-size: 5rem;
         line-height: 5.5rem;
+    }
+}
+
+/* mobile menu icon */
+.menu_toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 28rem;
+}
+
+/* sidebar */
+.mobile_sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    background: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: 0.3s ease;
+    z-index: 999;
+}
+
+.mobile_sidebar ul {
+    list-style: none;
+    margin-top: 40px;
+}
+
+.mobile_sidebar ul li {
+    margin: 15px 0;
+}
+
+.mobile_sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.close_btn {
+    text-align: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* show sidebar */
+.mobile_sidebar.active {
+    left: 0;
+}
+
+/* mobile view only */
+@media (max-width: 576px) {
+    .brand_logo {
+        margin-right: 24rem;
+    }
+
+    .navbar,
+    .right_icons {
+        display: none;
+    }
+
+    .menu_toggle {
+        display: block;
     }
 }

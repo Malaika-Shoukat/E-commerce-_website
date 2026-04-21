@@ -20,6 +20,10 @@
         <div class="brand_logo">
             <h2>SNIKEI</h2>
         </div>
+        <!-- hamburger menu (mobile only) -->
+        <div class="menu_toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
         <div class="navbar">
             <nav>
                 <ul>
@@ -28,6 +32,7 @@
                     <li><a href="#">About</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">contact</a></li>
+                </ul>
             </nav>
         </div>
         <div class="right_icons">
@@ -35,6 +40,20 @@
                 <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <li><a href=""><i class="fa-regular fa-user"></i></a></li>
+            </ul>
+        </div>
+        <!-- mobile sidebar -->
+        <div class="mobile_sidebar">
+            <div class="close_btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
     </header>
     <!-- hero section  -->
@@ -366,6 +385,19 @@
 
     </footer>
 </div>
+<script>
+    const menuBtn = document.querySelector(".menu_toggle");
+    const sidebar = document.querySelector(".mobile_sidebar");
+    const closeBtn = document.querySelector(".close_btn");
+
+    menuBtn.addEventListener("click", () => {
+        sidebar.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        sidebar.classList.remove("active");
+    });
+</script>
 </body>
 
 </html>
